@@ -1,0 +1,17 @@
+plugin-name=vjmap
+plugin-namespace=vipshop
+plugin-description=VJMap prints per GC generation (Eden, Survivor, OldGen) object details of a given process , it is an advanced way to find the reasons of memory leak and fast-growing OldGen.
+plugin-version=1.0.0-RELEASE
+tool-author=vipshop
+tool-project=https://github.com/vipshop/vjtools/tree/master/vjmap
+plugin-author=PerfMa
+plugin-project=xpocket-plugin-vjmap
+plugin-type=java
+plugin-dependency=
+jdk-version=8
+jvm=hotspot
+os=all
+sys-dependency=top,ps
+plugin-command-package=com.perfma.xpocket.plugin.vjtools.vjmap.command
+main-implementation=com.perfma.xpocket.plugin.vjtools.vjmap.VJMapPlugin
+usage-tips=1.usage-tips=1.目前vjmap插件仅支持linux系统。\n 2. Usage: vjmap <options> <PID>\nUsage: vjmap <options> <executable java path> <coredump file path>\nUsage "help vjmap" show options info
